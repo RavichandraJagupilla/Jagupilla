@@ -13,6 +13,7 @@ public class VectorDemo {
 		int arr[]={10,20,30,40,50,60};
 		
 		// when arr[i] is stored into vector v. arr[i] 
+		//Autoboxing will happen and it converts the int into wapper object.
 		
 		for(int i=0;i<arr.length;i++)
 		{

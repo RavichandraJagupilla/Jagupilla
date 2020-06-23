@@ -1,5 +1,8 @@
 package com.collections.edu;
 
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 //Java orogram to demonstrate working of Queue 
 //interface in Java 
 import java.util.LinkedList; 
@@ -9,6 +12,7 @@ public class QueueExample
 { 
 public static void main(String[] args) 
 { 
+	
 	Queue<Integer> q = new LinkedList<>(); 
 
 	// Adds elements {0, 1, 2, 3, 4} to queue 

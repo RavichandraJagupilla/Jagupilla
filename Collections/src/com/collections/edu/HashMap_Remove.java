@@ -16,7 +16,7 @@ public class HashMap_Remove {
         System.out.println("Removed value: " + value);
 
         // remove method with two parameters
-        boolean result = numbers.remove("Three", 3);
+        boolean result = numbers.remove("Four", 4);
         System.out.println("Is the entry Three removed? " + result);
 
         System.out.println("Updated HashMap: " + numbers);

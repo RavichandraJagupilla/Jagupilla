@@ -19,6 +19,7 @@ public class Vector_Exp1 {
 	        Vector<String> animals = new Vector<>();
 	        animals.add("Crocodile");
 
+	        System.out.println(animals);
 	        animals.addAll(mammals);
 	        System.out.println("New Vector: " + animals);
 	    }

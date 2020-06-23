@@ -15,10 +15,11 @@ public class HaspMap_get {
         System.out.println("Returned Number: " + value1);
 
         // Using getOrDefault()
-        int value2 = numbers.getOrDefault("Five", 5);
-        System.out.println("Returned Number: " + value2);
-        int value3 = numbers.getOrDefault("Two", 5);
-        System.out.println("Returned Number: " + value3);
+       int value2 = numbers.getOrDefault("Five", 5);
+       System.out.println("Returned Number: " + value2);
+       System.out.println("HashMap: " + numbers);
+//        int value3 = numbers.getOrDefault("Two", 5);
+//        System.out.println("Returned Number: " + value3);
     }
 }
 
