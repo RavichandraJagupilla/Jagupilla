@@ -25,7 +25,7 @@ public class Arrays_sort_search {
 		System.out.println("\nSorted Content");
 		display(arr);
 		
-		Arrays.sort(arr);
+		//Arrays.sort(arr);
 		// Now search for an element
 		System.out.println("\nEnter the element to search");
 		int element=scanner.nextInt();
@@ -35,6 +35,7 @@ public class Arrays_sort_search {
 		else 
 			System.out.println("\nElement found in location:"+index);
 
+		
 	}
 	
 	
@@ -48,4 +49,7 @@ public class Arrays_sort_search {
 		
 		
 	}
+
+
+	
 }

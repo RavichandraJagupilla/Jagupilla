@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * Sorting an array of Employee objects - Arrays.sort() method
- * @author Ramesh Fadatare
+ * @author 
  *
  */
  class Employee implements Comparable < Employee > {
@@ -43,7 +43,7 @@ import java.util.Arrays;
     }
     @Override
     public int compareTo(Employee o) {
-        return this.name.compareTo(o.name) ;
+        return this.salary-o.salary ;
     }
 }
 public class SortingArrayExamples {
