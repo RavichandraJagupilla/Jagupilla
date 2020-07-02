@@ -6,7 +6,7 @@ class MyThread extends Thread{
 	
 	boolean stop= false;
 		public void run() {
-			for(int i =1;i<1000000;i++)
+			for(int i =1;i<100;i++)
 			{
 				System.out.println(i);
 				if(stop)
@@ -25,7 +25,9 @@ public class ThreadDemo1 {
 		MyThread myThread = new MyThread();
 		Runnable target;
 		Thread t= new Thread(myThread);
+		System.out.println("is thread alive :"+t.isAlive());
 		t.start();
+		System.out.println("is thread after alive :"+t.isAlive());
 		System.in.read();
 		myThread.stop=true;
 
