@@ -24,8 +24,8 @@ public class Thread_Priority_imp {
 		Thread t1= new Thread(myThred, "one");
 		Thread t2= new Thread(myThred, "Two");
 		
-		t2.setPriority(1);
-		
+		t2.setPriority(10);
+		t1.setPriority(9);
 		t1.start();
 		t2.start();
 	}
