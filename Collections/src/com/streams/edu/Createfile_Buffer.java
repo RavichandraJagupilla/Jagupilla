@@ -1,9 +1,12 @@
 package com.streams.edu;
 
-import java.io.*;
-public class CreateFile {
+import java.io.BufferedOutputStream;
+import java.io.DataInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
-	
+public class Createfile_Buffer {
+
 	public static void main(String[] args)  throws IOException{
 		// TODO Auto-generated method stub
 
@@ -12,6 +15,7 @@ public class CreateFile {
 		//attach my file to FileOutputStream
 		
 		FileOutputStream fout= new FileOutputStream("G:/Online_Core_Java/myfile.txt", true);
+		BufferedOutputStream bout= new BufferedOutputStream(fout,1024);
 		
 		System.out.println("Enter text (@ to end):");
 		
@@ -19,13 +23,14 @@ public class CreateFile {
 		// read the character from dis into ch. Then write them into fout.
 		// repeat this as long as read character is not '@'
 		
-		while ((ch=(char)dis.read())!='@') {
+		while ((ch=(char)dis.read( ))!='@') {
 			
-			fout.write(ch);
+			bout.write(ch);
 			
 		}
 		// close the file
-		fout.close();
+		bout.close();
 	}
 
 }
+

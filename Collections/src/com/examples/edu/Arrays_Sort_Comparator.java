@@ -1,5 +1,6 @@
 package com.examples.edu;
 
+import java.io.*;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Scanner;
@@ -31,9 +32,10 @@ public class Arrays_Sort_Comparator {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+	
 		// to accept values from keyboard
-		Scanner scanner = new Scanner(System.in);
-		System.out.println(" how many elements to add");
+	Scanner scanner = new Scanner(System.in);
+	System.out.println(" how many elements to add");
 		int size= scanner.nextInt();
 		
 		Integer arr[] = new Integer[size];
